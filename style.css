@@ -1,0 +1,233 @@
+@charset "UTF-8";
+body {
+  background: url(https://i.imgur.com/pIisAZp.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.black {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(20px);
+  z-index: -1; }
+
+.wrapper {
+  box-sizing: border-box;
+  width: 960px;
+  margin: 0 auto;
+  z-index: 2; }
+  .wrapper .header {
+    box-sizing: border-box;
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #DDD;
+    z-index: 3; }
+    .wrapper .header h1, .wrapper .header h2, .wrapper .header h3, .wrapper .header h4, .wrapper .header h5, .wrapper .header h6, .wrapper .header p {
+      color: #111; }
+  .wrapper .navBar {
+    box-sizing: border-box;
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #999;
+    z-index: 3; }
+    .wrapper .navBar ul {
+      float: right;
+      list-style: none;
+      border-top: 2px dotted #FFF;
+      border-bottom: 2px dotted #FFF;
+      padding: 10px 10px 10px 10px; }
+      .wrapper .navBar ul li {
+        position: relative;
+        margin: 0px 10px 0px 10px;
+        padding: 5px 20px 5px 20px;
+        border: 1px solid #FFF;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 0px 5px #AAA;
+        color: #FFF;
+        text-shadow: 1px 1px 0px #5e5e5e;
+        float: left;
+        overflow: hidden;
+        cursor: pointer; }
+      .wrapper .navBar ul li:nth-child(1) {
+        background: #555555; }
+      .wrapper .navBar ul li:nth-child(2) {
+        background: #4CAF50; }
+      .wrapper .navBar ul li:nth-child(3) {
+        background: #2196F3; }
+      .wrapper .navBar ul li:nth-child(4) {
+        background: #ff9800; }
+      .wrapper .navBar ul li:nth-child(5) {
+        background: #f44336; }
+      .wrapper .navBar ul li:nth-child(6) {
+        background: #e7e7e7; }
+      .wrapper .navBar ul li::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 80px;
+        top: -20px;
+        left: -30px;
+        background: rgba(255, 255, 255, 0.8);
+        transform: rotate(-45deg);
+        transition: all 0.15s ease-in-out; }
+      .wrapper .navBar ul li:hover::after {
+        left: 90px;
+        background: rgba(255, 255, 255, 0.1); }
+  .wrapper .content {
+    box-sizing: border-box;
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #DDD;
+    z-index: 3; }
+    .wrapper .content p {
+      height: 1.5em;
+      margin: 10px;
+      margin-left: 15px;
+      background: #AAA; }
+    .wrapper .content p:nth-child(1) {
+      display: inline-flex;
+      justify-content: center;
+      width: 60px; }
+    .wrapper .content p:nth-child(2) {
+      display: inline-flex;
+      justify-content: center;
+      width: 560px; }
+    .wrapper .content p:nth-child(3) {
+      display: inline-flex;
+      justify-content: center;
+      width: 80px; }
+    .wrapper .content p:nth-child(4) {
+      display: inline-flex;
+      justify-content: center;
+      width: 80px; }
+    .wrapper .content .row {
+      box-sizing: border-box;
+      background: #CCC;
+      position: relative;
+      border: 1px solid #FFF;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: baseline;
+      width: calc($PCWidth - 40px);
+      height: 64px;
+      margin: 15px 0px 15px 0px;
+      font-size: 16px; }
+      .wrapper .content .row h4 {
+        margin-left: 20px;
+        width: 560px;
+        float: left; }
+      .wrapper .content .row p {
+        margin-right: 20px;
+        width: 120px;
+        float: left; }
+      .wrapper .content .row a {
+        width: 120px;
+        float: left; }
+    .wrapper .content .row::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 200px;
+      top: -70px;
+      left: -130px;
+      background: rgba(255, 255, 255, 0.8);
+      transform: rotate(-45deg);
+      -webkit-transition: 0s;
+      -moz-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s; }
+    .wrapper .content .row:hover::after {
+      left: 960px;
+      background: rgba(255, 255, 255, 0.1);
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .wrapper .content .menu::before {
+      content: "選單";
+      background: #4CAF50;
+      width: 40px;
+      height: 25px;
+      margin: 0px 15px 0px 15px;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid #FFF;
+      border-radius: 5px 5px 5px 5px;
+      color: #FFF;
+      text-shadow: 1px 1px 0px #5e5e5e;
+      float: left; }
+    .wrapper .content .battle::before {
+      content: "戰鬥";
+      background: #2196F3;
+      width: 40px;
+      height: 25px;
+      margin: 0px 15px 0px 15px;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid #FFF;
+      border-radius: 5px 5px 5px 5px;
+      color: #FFF;
+      text-shadow: 1px 1px 0px #5e5e5e;
+      float: left; }
+    .wrapper .content .map::before {
+      content: "地圖";
+      background: #ff9800;
+      width: 40px;
+      height: 25px;
+      margin: 0px 15px 0px 15px;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid #FFF;
+      border-radius: 5px 5px 5px 5px;
+      color: #FFF;
+      text-shadow: 1px 1px 0px #5e5e5e;
+      float: left; }
+    .wrapper .content .system::before {
+      content: "系統";
+      background: #f44336;
+      width: 40px;
+      height: 25px;
+      margin: 0px 15px 0px 15px;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid #FFF;
+      border-radius: 5px 5px 5px 5px;
+      color: #FFF;
+      text-shadow: 1px 1px 0px #5e5e5e;
+      float: left; }
+    .wrapper .content .other::before {
+      content: "其他";
+      background: #e7e7e7;
+      width: 40px;
+      height: 25px;
+      margin: 0px 15px 0px 15px;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid #FFF;
+      border-radius: 5px 5px 5px 5px;
+      color: #FFF;
+      text-shadow: 1px 1px 0px #5e5e5e;
+      float: left; }
+  .wrapper .footer {
+    box-sizing: border-box;
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #DDD;
+    justify-content: center;
+    align-content: center;
+    z-index: 3; }
+    .wrapper .footer h3 {
+      padding: 10px;
+      color: #111; }
+    .wrapper .footer p {
+      padding: 10px;
+      color: #111; }
+
+/*# sourceMappingURL=style.css.map */
